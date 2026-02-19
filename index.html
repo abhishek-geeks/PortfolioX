@@ -14,6 +14,42 @@
   <meta property="og:url" content="https://abhishekgeeks.dev" />
   
   <title>Abhishek Kumar | Full Stack Developer & Freelancer</title>
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhishek Kumar",
+    "url": "https://abhishekgeeks.dev",
+    "jobTitle": "Full Stack Developer & Freelancer",
+    "description": "Full Stack Developer, Product Builder, and AI Enthusiast helping startups build scalable digital products.",
+    "sameAs": [
+      "https://github.com/abhishekgeeks",
+      "https://linkedin.com/in/abhishekgeeks",
+      "https://twitter.com/abhishekgeeks"
+    ],
+    "knowsAbout": ["Web Development", "Full Stack Development", "AI/ML", "Product Development", "DevOps"],
+    "offers": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Freelance Development Services",
+        "description": "Full Stack Development, MVP Building, AI Integration, and Technical Consulting"
+      }
+    }
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -42,18 +78,36 @@
 
 <!-- HERO -->
 <section class="hero reveal">
-  <!-- Floating Tech Icons -->
+  <!-- Floating Tech Icons (SVG-style realistic) -->
   <div class="floating-icons">
-    <span class="float-icon" style="--delay: 0s; --x: 10%; --y: 20%;">⚛️</span>
-    <span class="float-icon" style="--delay: 0.5s; --x: 85%; --y: 15%;">🐍</span>
-    <span class="float-icon" style="--delay: 1s; --x: 15%; --y: 70%;">🚀</span>
-    <span class="float-icon" style="--delay: 1.5s; --x: 80%; --y: 75%;">☁️</span>
-    <span class="float-icon" style="--delay: 2s; --x: 50%; --y: 10%;">🤖</span>
-    <span class="float-icon" style="--delay: 2.5s; --x: 5%; --y: 45%;">💻</span>
-    <span class="float-icon" style="--delay: 3s; --x: 92%; --y: 50%;">🔥</span>
+    <div class="float-icon" style="--delay: 0s; --x: 8%; --y: 20%;">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#61DAFB" stroke-width="1.5"><circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+    </div>
+    <div class="float-icon" style="--delay: 0.5s; --x: 88%; --y: 15%;">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="#3776AB"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+    </div>
+    <div class="float-icon" style="--delay: 1s; --x: 12%; --y: 72%;">
+      <svg width="38" height="38" viewBox="0 0 24 24" fill="#F7DF1E"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.405-.585-.585-.765-.63-.63-1.47-.93-2.835-.885l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+    </div>
+    <div class="float-icon" style="--delay: 1.5s; --x: 85%; --y: 70%;">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="#FF9900"><path d="M18.75 11.35a4.32 4.32 0 0 1-.79-.08 3.9 3.9 0 0 1-.73-.23l-.17-.04h-.12q-.15 0-.15.21v.33a.43.43 0 0 0 0 .19.5.5 0 0 0 .21.19 3 3 0 0 0 .76.26 4.38 4.38 0 0 0 1 .12 3 3 0 0 0 1-.14 2.22 2.22 0 0 0 .75-.38 1.72 1.72 0 0 0 .47-.57 1.78 1.78 0 0 0 .21-.63 1.86 1.86 0 0 0-.32-1.17 2.35 2.35 0 0 0-1.11-.87 5 5 0 0 1-.76-.36.77.77 0 0 1-.27-.27.61.61 0 0 1-.06-.27.52.52 0 0 1 .23-.47 1.09 1.09 0 0 1 .63-.16 2.67 2.67 0 0 1 .6.06 3 3 0 0 1 .53.12H20a.13.13 0 0 0 .11-.07.35.35 0 0 0 0-.17v-.3a.56.56 0 0 0 0-.17.27.27 0 0 0-.13-.11 2.62 2.62 0 0 0-.63-.17 4.06 4.06 0 0 0-.79-.07 2.94 2.94 0 0 0-1 .13 2.08 2.08 0 0 0-.73.36 1.6 1.6 0 0 0-.45.55 1.56 1.56 0 0 0-.16.7 1.51 1.51 0 0 0 .37 1.06 2.55 2.55 0 0 0 1.15.78 6 6 0 0 1 .75.34.8.8 0 0 1 .28.27.63.63 0 0 1 .07.31.58.58 0 0 1-.27.52 1.41 1.41 0 0 1-.74.17zm-13.86 1.1a.12.12 0 0 1-.08 0 .1.1 0 0 1 0-.1L7.7 6.76a.21.21 0 0 1 .09-.11.27.27 0 0 1 .14 0h.91a.17.17 0 0 1 .13 0 .16.16 0 0 1 .06.11l2.85 5.54a.08.08 0 0 1 0 .08.13.13 0 0 1-.1 0h-.83a.25.25 0 0 1-.23-.13l-.55-1.08H7.32l-.53 1.09a.22.22 0 0 1-.22.13h-.78zm3.2-2.18l-1-2-1 2zm-5.59.85a.1.1 0 0 1-.07 0 .12.12 0 0 1 0-.1l-.01-5.32a.16.16 0 0 1 0-.1.1.1 0 0 1 .09 0h.81a.1.1 0 0 1 .09 0 .14.14 0 0 1 0 .11l.02 4.4 2.34-4.44a.29.29 0 0 1 .26-.13h.68a.11.11 0 0 1 .1 0 .14.14 0 0 1 0 .11v5.32a.12.12 0 0 1 0 .1.09.09 0 0 1-.08 0H5.8a.1.1 0 0 1-.08 0 .14.14 0 0 1 0-.1V6.71L3.35 11.1a.28.28 0 0 1-.25.13h-.6z"/></svg>
+    </div>
+    <div class="float-icon" style="--delay: 2s; --x: 50%; --y: 8%;">
+      <svg width="38" height="38" viewBox="0 0 24 24" fill="#764ABC"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+    </div>
+    <div class="float-icon" style="--delay: 2.5s; --x: 5%; --y: 45%;">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="#2496ED"><path d="M13.983 11.078h2.119a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.119a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 0 0 .186-.186V3.574a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.186m0 2.716h2.118a.187.187 0 0 0 .186-.186V6.29a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 0 0 .184-.186V6.29a.185.185 0 0 0-.185-.185H8.1a.185.185 0 0 0-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 0 0 .185-.186V6.29a.185.185 0 0 0-.185-.185H5.136a.186.186 0 0 0-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.185-.186h-2.119a.186.186 0 0 0-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 0 0-.75.748 11.376 11.376 0 0 0 .692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 0 0 3.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/></svg>
+    </div>
+    <div class="float-icon" style="--delay: 3s; --x: 93%; --y: 48%;">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="#00D8FF"><path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9c-.6 0-1.17 0-1.71.03-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03.6 0 1.17 0 1.71-.03.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74l.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68 0 1.69-1.83 2.93-4.37 3.68.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68 0-1.69 1.83-2.93 4.37-3.68-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26 0-.73-1.18-1.63-3.28-2.26-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26 0 .73 1.18 1.63 3.28 2.26.25-.76.55-1.51.89-2.26m9 2.26l-.3.51c.31-.05.61-.1.88-.16-.07-.28-.18-.57-.29-.86l-.29.51m-2.89 4.04c1.59 1.5 2.97 2.08 3.59 1.7.64-.35.83-1.82.32-3.96-.77.16-1.58.28-2.4.36-.48.67-.99 1.31-1.51 1.9M8.08 9.74l.3-.51c-.31.05-.61.1-.88.16.07.28.18.57.29.86l.29-.51m2.89-4.04C9.38 4.2 8 3.62 7.37 4c-.63.35-.82 1.82-.31 3.96a22.7 22.7 0 0 1 2.4-.36c.48-.67.99-1.31 1.51-1.9z"/></svg>
+    </div>
   </div>
 
-  <div class="hero-badge">✨ Available for Freelance</div>
+  <!-- Hero Badge - Enhanced -->
+  <div class="hero-badge">
+    <span class="badge-dot"></span>
+    Available for Freelance
+  </div>
   
   <!-- Profile Avatar -->
   <div class="hero-avatar">
@@ -62,7 +116,11 @@
     </div>
   </div>
 
-  <h1>Hi, I'm Abhishek Kumar</h1>
+  <!-- Floating Title -->
+  <h1 class="hero-title">
+    <span class="title-line">Hi, I'm</span>
+    <span class="title-name">Abhishek Kumar</span>
+  </h1>
   <p id="typing"></p>
   <p class="hero-description">
     I build digital products that scale. From MVPs to production‑ready apps,
@@ -87,19 +145,8 @@
 
   <div class="hero-buttons">
     <a href="#contact" class="btn btn-primary">Hire Me</a>
-    <a href="#projects" class="btn btn-secondary">View Projects</a>
-    <a href="resume.pdf" target="_blank" class="btn btn-outline">Resume</a>
-  </div>
-
-  <!-- Trusted By -->
-  <div class="trusted-by">
-    <p>Trusted by teams at</p>
-    <div class="trusted-logos">
-      <span class="trusted-logo">Startup X</span>
-      <span class="trusted-logo">TechCorp</span>
-      <span class="trusted-logo">InnovateLabs</span>
-      <span class="trusted-logo">CloudBase</span>
-    </div>
+    <a href="https://calendly.com/abhishekgeeks" target="_blank" class="btn btn-secondary">📅 Book a Call</a>
+    <a href="#projects" class="btn btn-outline">View Projects</a>
   </div>
 
   <!-- Scroll Indicator -->
