@@ -23,7 +23,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 // ===== TYPING ANIMATION =====
-const text = "Full Stack Developer • DevOps Engineer • AI Enthusiast";
+const text = "Full Stack Developer • Product Builder • AI Enthusiast • Freelancer";
 let i = 0;
 
 function type() {
@@ -53,55 +53,55 @@ window.addEventListener('scroll', revealOnScroll);
 const projects = [
   {
     name: "GenZ",
-    subtitle: "Community & Content Platform",
-    description: "A modern social platform designed for Gen Z users with real-time feeds, messaging, and content discovery features.",
-    category: "fullstack",
+    subtitle: "Social Platform",
+    description: "A modern social platform for Gen Z with real-time feeds, messaging, and content discovery. 5K+ active users.",
+    category: "product",
     tags: ["React", "Node.js", "MongoDB", "WebSocket"],
     github: "https://github.com/abhishekgeeks",
     demo: "#"
   },
   {
-    name: "CatererGuy",
-    subtitle: "Real Estate Platform",
-    description: "GeeksEstate - Advanced real estate marketplace with property listings, virtual tours, and intelligent matching.",
-    category: "fullstack",
-    tags: ["React", "Firebase", "Maps API", "Payment Integration"],
+    name: "GeeksEstate",
+    subtitle: "Real Estate Marketplace",
+    description: "Client project: Advanced property marketplace with listings, virtual tours, and intelligent matching.",
+    category: "client",
+    tags: ["React", "Firebase", "Maps API", "Payments"],
     github: "https://github.com/abhishekgeeks",
     demo: "#"
   },
   {
-    name: "Invoice Generator",
-    subtitle: "Business Automation Tool",
-    description: "Professional invoice generation system with customizable templates, automated tracking, and PDF export.",
-    category: "fullstack",
-    tags: ["React", "Express", "jsPDF", "MongoDB"],
+    name: "InvoiceFlow",
+    subtitle: "Business SaaS",
+    description: "Invoice generation SaaS with templates, automated tracking, and PDF export. Used by 50+ businesses.",
+    category: "product",
+    tags: ["Next.js", "Stripe", "PostgreSQL", "PDF"],
     github: "https://github.com/abhishekgeeks",
     demo: "#"
   },
   {
-    name: "AI Chat Assistant",
-    subtitle: "Conversational Intelligence",
-    description: "Conversational AI using modern LLM APIs with memory, context awareness, and multi-language support.",
+    name: "AI Assistant API",
+    subtitle: "LLM Integration",
+    description: "Production-ready AI assistant API with memory, context awareness, and multi-language support.",
     category: "ai",
-    tags: ["OpenAI", "Express", "Socket.io", "NLP"],
+    tags: ["OpenAI", "LangChain", "FastAPI", "Redis"],
     github: "https://github.com/abhishekgeeks",
     demo: "#"
   },
   {
-    name: "Neural Visualizer",
-    subtitle: "ML Visualization Tool",
-    description: "Interactive neural-network visualization tool for understanding and debugging machine learning models.",
-    category: "ai",
-    tags: ["TensorFlow", "React", "D3.js", "Python"],
+    name: "StartupX MVP",
+    subtitle: "Client Project",
+    description: "Built complete MVP for a funded startup in 6 weeks. From idea to production deployment.",
+    category: "client",
+    tags: ["Next.js", "TypeScript", "Prisma", "AWS"],
     github: "https://github.com/abhishekgeeks",
     demo: "#"
   },
   {
-    name: "DevOps CI/CD Pipeline",
-    subtitle: "Automation & Deployment",
-    description: "End-to-end automated pipeline using GitHub Actions, Docker, and Kubernetes for seamless deployments.",
-    category: "devops",
-    tags: ["Docker", "GitHub Actions", "Kubernetes", "AWS"],
+    name: "CloudDeploy",
+    subtitle: "DevOps Toolkit",
+    description: "Open-source CI/CD toolkit for automated deployments. 200+ GitHub stars.",
+    category: "opensource",
+    tags: ["Docker", "GitHub Actions", "Kubernetes", "Terraform"],
     github: "https://github.com/abhishekgeeks",
     demo: "#"
   }
@@ -142,12 +142,23 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 // ===== SKILLS RENDERING =====
 function renderSkills() {
   const skillsContainer = document.getElementById('skills-container');
-  const skills = ["Java", "Python", "JavaScript", "AWS", "Docker", "Linux", "MySQL", "Git", "DevOps", "AI/ML", "System Design", "REST APIs"];
+  const skillCategories = {
+    "Frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"],
+    "Backend": ["Node.js", "Python", "Express", "FastAPI", "PostgreSQL", "MongoDB"],
+    "AI/ML": ["OpenAI API", "LangChain", "TensorFlow", "PyTorch"],
+    "DevOps": ["Docker", "AWS", "Kubernetes", "CI/CD", "Linux"],
+    "Tools": ["Git", "Figma", "VS Code", "Postman"]
+  };
   
   if (skillsContainer) {
-    skillsContainer.innerHTML = skills.map(s => 
-      `<span class="skill-badge">${s}</span>`
-    ).join("");
+    skillsContainer.innerHTML = Object.entries(skillCategories).map(([category, skills]) => `
+      <div class="skill-category">
+        <h4 class="skill-category-title">${category}</h4>
+        <div class="skill-badges">
+          ${skills.map(s => `<span class="skill-badge">${s}</span>`).join("")}
+        </div>
+      </div>
+    `).join("");
   }
 }
 
