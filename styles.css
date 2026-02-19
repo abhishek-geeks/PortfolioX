@@ -182,6 +182,156 @@ body::-webkit-scrollbar {
   padding: 100px 20px 60px;
   margin-top: 60px;
   animation: fadeInUp 1s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Tech Icons */
+.floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.float-icon {
+  position: absolute;
+  font-size: 28px;
+  left: var(--x);
+  top: var(--y);
+  animation: floatIcon 6s ease-in-out infinite;
+  animation-delay: var(--delay);
+  opacity: 0.4;
+  filter: blur(0.5px);
+}
+
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+}
+
+/* Hero Avatar */
+.hero-avatar {
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.avatar-ring {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light), var(--accent-lighter));
+  animation: rotateGlow 3s linear infinite;
+}
+
+@keyframes rotateGlow {
+  0% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.4); }
+  50% { box-shadow: 0 0 40px rgba(34, 197, 94, 0.6); }
+  100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.4); }
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* Hero Stats */
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  margin: 30px 0;
+  z-index: 1;
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat-number {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.hero-stat-label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+/* Trusted By */
+.trusted-by {
+  margin-top: 50px;
+  z-index: 1;
+}
+
+.trusted-by p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.trusted-logos {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trusted-logo {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.trusted-logo:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.scroll-arrow {
+  width: 24px;
+  height: 24px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+  animation: scrollBounce 2s infinite;
+  display: block;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); opacity: 1; }
+  50% { transform: rotate(45deg) translateY(10px); opacity: 0.5; }
 }
 
 @keyframes fadeInUp {
@@ -234,11 +384,24 @@ body::-webkit-scrollbar {
   font-weight: 500;
   margin-bottom: 24px;
   animation: pulse 2s infinite;
+  z-index: 1;
 }
 
 @keyframes pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
   50% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+}
+
+.hero h1 {
+  z-index: 1;
+}
+
+#typing {
+  z-index: 1;
+}
+
+.hero-description {
+  z-index: 1;
 }
 
 .hero-buttons {
@@ -247,6 +410,7 @@ body::-webkit-scrollbar {
   gap: 14px;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 1;
 }
 
 .btn {
@@ -1130,6 +1294,50 @@ footer {
     width: 100%;
     max-width: 200px;
     text-align: center;
+  }
+
+  /* Hero enhancements mobile */
+  .floating-icons {
+    display: none;
+  }
+
+  .hero-avatar {
+    margin-bottom: 16px;
+  }
+
+  .avatar-ring {
+    width: 80px;
+    height: 80px;
+  }
+
+  .avatar-placeholder {
+    font-size: 26px;
+  }
+
+  .hero-stats {
+    gap: 24px;
+    margin: 24px 0;
+  }
+
+  .hero-stat-number {
+    font-size: 26px;
+  }
+
+  .trusted-by {
+    margin-top: 40px;
+  }
+
+  .trusted-logos {
+    gap: 12px;
+  }
+
+  .trusted-logo {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .scroll-indicator {
+    bottom: 20px;
   }
 
   /* Services mobile */

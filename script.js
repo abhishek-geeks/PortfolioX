@@ -49,6 +49,43 @@ function revealOnScroll() {
 
 window.addEventListener('scroll', revealOnScroll);
 
+// ===== ANIMATED COUNTER =====
+function animateCounters() {
+  const counters = document.querySelectorAll('.hero-stat-number');
+  const speed = 100;
+
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-count');
+    const increment = target / speed;
+    let current = 0;
+
+    const updateCounter = () => {
+      current += increment;
+      if (current < target) {
+        counter.textContent = Math.ceil(current);
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = target;
+      }
+    };
+
+    updateCounter();
+  });
+}
+
+// Trigger counters when hero is visible
+const heroObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounters();
+      heroObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+const heroSection = document.querySelector('.hero');
+if (heroSection) heroObserver.observe(heroSection);
+
 // ===== PROJECTS DATA =====
 const projects = [
   {
