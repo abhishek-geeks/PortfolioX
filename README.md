@@ -36,7 +36,8 @@ PortfolioX/
 ├── index.html          # Main HTML (hero, about, services, skills, projects, contact)
 ├── styles.css          # All styling (1800+ lines, CSS variables, animations)
 ├── script.js           # JavaScript (nav toggle, typing, counters, filters)
-├── Abhi.jpg            # Profile photo
+├── assets/
+│   └── Abhi.jpg        # Profile photo
 ├── README.md           # Documentation
 ├── SUGGESTIONS.md      # Future enhancement ideas
 ├── package.json        # Project metadata
@@ -95,7 +96,7 @@ PortfolioX/
    ```
 
 3. **Customize**
-   - Replace `Abhi.jpg` with your photo
+   - Replace `assets/Abhi.jpg` with your photo
    - Update content in `index.html`
    - Modify colors in `styles.css` (`:root` variables)
    - Add your projects in `script.js`
