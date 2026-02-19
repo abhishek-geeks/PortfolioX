@@ -1,0 +1,12 @@
+{
+  "name": "abhishek-kumar-portfolio",
+  "version": "2.0.0",
+  "description": "Developer portfolio website for Abhishek Kumar - Full Stack Developer, DevOps Engineer, AI Enthusiast",
+  "author": "Abhishek Kumar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhishekgeeks/portfolio.git"
+  },
+  "homepage": "https://abhishekgeeks.dev"
+}

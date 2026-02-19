@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abhishek Kumar - Full Stack Developer, DevOps Engineer, AI Enthusiast. Building scalable software and cloud-native systems." />
+  <meta name="theme-color" content="#020617" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Abhishek Kumar | Developer Portfolio" />
+  <meta property="og:description" content="Full Stack Developer focused on building scalable software, cloud-native systems, and AI-powered products." />
+  <meta property="og:url" content="https://abhishekgeeks.dev" />
+  
+  <title>Abhishek Kumar | Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <h2 class="logo">AK</h2>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#stack">Skills</a>
+      <a href="#stats">Stats</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<!-- HERO -->
+<section class="hero reveal">
+  <h1>Hi, I'm Abhishek Kumar</h1>
+  <p id="typing"></p>
+  <p class="hero-description">
+    Full Stack Developer focused on building scalable software, cloud‑native systems,
+    and AI‑powered products that solve real‑world problems and create meaningful impact.
+  </p>
+  <div class="hero-buttons">
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+    <a href="resume.pdf" target="_blank" class="btn btn-secondary">Download Resume</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <p>
+    Passionate Computer Science student and developer experienced in full‑stack
+    engineering, DevOps workflows, and AI‑driven application design. I specialize
+    in turning complex problems into scalable and production‑ready solutions.
+  </p>
+</section>
+
+<!-- STATS -->
+<section id="stats" class="reveal">
+  <h2>Quick Stats</h2>
+  <div class="stats-container">
+    <div class="stat-card">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Projects Completed</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">6+</div>
+      <div class="stat-label">Technologies</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">2+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Dedication</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="stack" class="reveal">
+  <h2>Tech Stack</h2>
+  <div class="skills-container" id="skills-container"></div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="reveal">
+  <h2>Experience & Journey</h2>
+  <div class="experience-timeline">
+    <div class="experience-item">
+      <div class="experience-year">2022 — Present</div>
+      <div class="experience-content">
+        <h3>Computer Science Foundation</h3>
+        <p class="experience-subtitle">Learning Core CS with DSA & System Design</p>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-year">2024 — Present</div>
+      <div class="experience-content">
+        <h3>Full Stack & AI Development</h3>
+        <p class="experience-subtitle">Building Scalable Apps with Modern Technologies</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <h2>Featured Projects</h2>
+  <div class="projects-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+    <button class="filter-btn" data-filter="ai">AI/ML</button>
+    <button class="filter-btn" data-filter="devops">DevOps</button>
+  </div>
+  <div class="projects-grid" id="projects-grid"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <h2>Get In Touch</h2>
+  <div class="contact-container">
+    <p>Open for internships, freelance, and collaborations.</p>
+    
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+      <div class="form-message" id="formMessage"></div>
+    </form>
+
+    <div class="contact-info" style="margin-top: 40px;">
+      <div>Email: <a href="mailto:abhishekgeeks@gmail.com">abhishekgeeks@gmail.com</a></div>
+      <div>GitHub: <a href="https://github.com/abhishekgeeks" target="_blank">github.com/abhishekgeeks</a></div>
+      <div>LinkedIn: <a href="https://linkedin.com/in/abhishekgeeks" target="_blank">linkedin.com/in/abhishekgeeks</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="social-links">
+    <a href="https://github.com/abhishekgeeks" target="_blank" title="GitHub">GH</a>
+    <a href="https://linkedin.com/in/abhishekgeeks" target="_blank" title="LinkedIn">LI</a>
+    <a href="mailto:abhishekgeeks@gmail.com" title="Email">✉</a>
+  </div>
+  <p>© 2026 Abhishek Kumar — Crafted with passion and precision. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
