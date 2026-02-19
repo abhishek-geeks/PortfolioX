@@ -1,6 +1,6 @@
 # PortfolioX - Abhishek Kumar
 
-🚀 **Full Stack Developer • Product Builder • AI Enthusiast • Freelancer**
+🚀 **Full Stack Developer • Product Builder • AI Enthusiast **
 
 A modern, responsive developer portfolio showcasing services, skills, projects, and experience. Built with pure HTML, CSS, and JavaScript.
 
