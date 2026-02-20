@@ -94,8 +94,8 @@ const projects = [
     description: "A modern social platform for Gen Z with real-time feeds, messaging, and content discovery. 5K+ active users.",
     category: "product",
     tags: ["React", "Node.js", "MongoDB", "WebSocket"],
-    github: "https://github.com/abhishekgeeks",
-    demo: "#"
+    github: "https://github.com/abhishek-geeks",
+    demo: "https://genz-2b900.web.app/index.html"
   },
   {
     name: "GeeksEstate",
@@ -103,8 +103,8 @@ const projects = [
     description: "Client project: Advanced property marketplace with listings, virtual tours, and intelligent matching.",
     category: "client",
     tags: ["React", "Firebase", "Maps API", "Payments"],
-    github: "https://github.com/abhishekgeeks",
-    demo: "#"
+    github: "https://github.com/abhishek-geeks",
+    demo: "https://geeksestate.web.app/index.html"
   },
   {
     name: "InvoiceFlow",
@@ -112,7 +112,7 @@ const projects = [
     description: "Invoice generation SaaS with templates, automated tracking, and PDF export. Used by 50+ businesses.",
     category: "product",
     tags: ["Next.js", "Stripe", "PostgreSQL", "PDF"],
-    github: "https://github.com/abhishekgeeks",
+    github: "https://github.com/abhishek-geeks",
     demo: "#"
   },
   {
@@ -121,7 +121,7 @@ const projects = [
     description: "Production-ready AI assistant API with memory, context awareness, and multi-language support.",
     category: "ai",
     tags: ["OpenAI", "LangChain", "FastAPI", "Redis"],
-    github: "https://github.com/abhishekgeeks",
+    github: "https://github.com/abhishek-geeks",
     demo: "#"
   },
   {
@@ -130,7 +130,7 @@ const projects = [
     description: "Built complete MVP for a funded startup in 6 weeks. From idea to production deployment.",
     category: "client",
     tags: ["Next.js", "TypeScript", "Prisma", "AWS"],
-    github: "https://github.com/abhishekgeeks",
+    github: "https://github.com/abhishek-geeks",
     demo: "#"
   },
   {
@@ -139,7 +139,7 @@ const projects = [
     description: "Open-source CI/CD toolkit for automated deployments. 200+ GitHub stars.",
     category: "opensource",
     tags: ["Docker", "GitHub Actions", "Kubernetes", "Terraform"],
-    github: "https://github.com/abhishekgeeks",
+    github: "https://github.com/abhishek-geeks",
     demo: "#"
   }
 ];
